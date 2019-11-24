@@ -1,0 +1,146 @@
+@import "normalize.css";
+
+body { 
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); 
+    background-repeat: repeat; 
+} 
+
+img {
+    width: 12em;
+    margin: 1em;
+    place-self: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    text-align: center;
+    background: floralwhite;
+    margin-top: 1em;
+}
+
+.footer {
+    grid-column: 2;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    grid-template-columns: .2fr 1fr 0 1fr .2fr;
+}
+
+article {
+    margin: 1em;
+    display: grid;
+    box-shadow: 7px 7px 0 #333d;
+    border-radius: 10px;
+}
+
+.thoughts {
+    background-color: floralwhite;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-self: center;
+    grid-row: 1;
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    border-radius: 5px;
+}
+
+.thoughts h2 {
+    margin-bottom: 0;
+}
+
+.even {
+    grid-column: 2;
+    place-self: center;
+}
+
+.even.thoughts {
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    text-align: right;
+}
+
+header {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    margin: -1em 2em;
+    text-align: center;
+    place-self: center;
+}
+
+.header {
+    grid-column: 4;
+    background: floralwhite;
+    border-radius: 10px;
+    box-shadow: 7px 7px 0 #333d;
+    padding: 1em;
+}
+
+#mixed-up {
+    background-color: lightblue;
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+
+#penumbra {
+    background-color: cadetblue;
+    grid-column: 4;
+    grid-row: 3 / span 2;
+}
+
+#endymion {
+    background-color: darkseagreen;
+    grid-column: 2;
+    grid-row: 4 / span 2;
+}
+
+#westing {
+    background-color: lightblue;
+    grid-column: 4;
+    grid-row: 5 / span 2;
+}
+
+#vermeer {
+    background-color: cadetblue;
+    grid-column: 2;
+    grid-row: 6 / span 2;
+}
+
+#fowl {
+    background-color: darkseagreen;
+    grid-column: 4;
+    grid-row: 7 / span 2;
+}
+
+#topsecret {
+    background-color: lightblue;
+    grid-column: 2;
+    grid-row: 8 / span 2;
+}
+
+#handbook {
+    background-color: cadetblue;
+    grid-column: 4;
+    grid-row: 9 / span 2;
+}
+
+@media (max-width: 900px) {
+    .thoughts {
+        grid-row: 2;
+    }
+    img {
+        place-self: center;
+    }
+    .even {
+        grid-column: unset;
+    }
+}
+

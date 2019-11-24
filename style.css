@@ -1,5 +1,7 @@
 @import "normalize.css";
 
+/* TO DO: Address the spacing & margin issues when in column mode. */
+
 body { 
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); 
     background-repeat: repeat; 
@@ -12,8 +14,8 @@ img {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
+    grid-row-start: 11;
+    grid-column: 1 / span 5;
     text-align: center;
     background: floralwhite;
     margin-top: 1em;
@@ -34,7 +36,10 @@ article {
     display: grid;
     box-shadow: 7px 7px 0 #333d;
     border-radius: 10px;
+    transition: all .5s ease;
 }
+
+article:hover { transform: scale(1.02); }
 
 .thoughts {
     background-color: floralwhite;
@@ -82,6 +87,31 @@ header {
     border-radius: 10px;
     box-shadow: 7px 7px 0 #333d;
     padding: 1em;
+}
+
+#curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+#hiddenSwitch {
+    position: fixed;
+    right: 1em;
+    background: floralwhite;
+    padding: .5em;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+#cover:hover {
+    mask: url("#cursorMask");
 }
 
 #mixed-up {
@@ -144,3 +174,43 @@ header {
     }
 }
 
+#h1 {
+    position: absolute;
+    left: 8em;
+    top: 26em;
+}
+#h2 {
+    position: absolute;
+    left: 70em;
+    top: 35em;
+}
+#h3 {
+    position: absolute;
+    left: 19em;
+    top: 67em;
+}
+#h4 {
+    position: absolute;
+    left: 27em;
+    top: 1em;
+}
+#h5 {
+    position: absolute;
+    right: 2em;
+    top: 50em;
+}
+#h6 {
+    position: absolute;
+    left: 45em;
+    top: 97em;
+}
+#h7 {
+    position: absolute;
+    left: 66em;
+    top: 66em;
+}
+#h8 {
+    position: absolute;
+    left: 2em;
+    top: 105em;
+}

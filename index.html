@@ -2,16 +2,15 @@
 <html>
     <head>
         <title>A List of Mysterious Books</title>
-        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <meta charset="utf-8">
     </head>
     <body>
-        
-
-        <main>
+        <main id="wrapper">
             <header>
                 <section class="header">
                     <h1>Welcome to the Gallery of Mysterious Books!</h1>
-                    <p>Turn the lights off...</p>
                 </section>
             </header>
             <article id="mixed-up">
@@ -27,7 +26,10 @@
                 <section class="thoughts">
                     <h2><a href="https://en.wikipedia.org/wiki/Mr._Penumbra%27s_24-Hour_Bookstore" target="_blank" title="Wikipedia">Mr. Penumbra's 24-Hour Bookstore</a></h2>
                     <p>
-                        Mr. Penumbra's 24-Hour Bookstore combines elements of fantasy, mystery, friendship and adventure as a way of looking at the modern conflict and transition between new technology (electronic) and old (print books). The protagonist is a laid-off Silicon Valley tech worker who begins working at a dusty bookstore with very few customers, only to start discovering one secret after another. The mysterious old books, along with the store's owner, lead to a 500-year-old secret society.
+                        “Neel takes a sharp breath and I know exactly what it means. It means: <em>I have waited my whole life to walk through a secret passage built into a bookshelf.</em>”
+                    </p>
+                    <p>
+                        A delicious mix of magical secret societies and the allure of books and knowledge, combined with a modern day interest in technology.
                     </p>
                 </section>
             </article>
@@ -36,7 +38,7 @@
                 <img src="images/endymion_spring.jpg" alt="cover image of Endymion Spring" />
                 <section class="thoughts even">
                     <h2><a href="https://en.wikipedia.org/wiki/Endymion_Spring" target="_blank" title="Wikipedia">Endymion Spring</a></h2>
-                    <p>This book is a force of mysterious knowledge: wandering the stacks of the Bodleain Library, a young boy encounters a book clasped by two serpents. Mysticisim, knowledge, and Faust are all part of the journey that commences.</p>
+                    <p>A force of mysterious knowledge runs through this book: wandering the stacks of the Bodleain Library, a young boy encounters a book clasped by two serpents. Mysticisim, knowledge, and Faust are all part of the journey that commences.</p>
                 </section>
             </article>
 
@@ -52,7 +54,7 @@
                 <img src="images/vermeer.jpg" alt="cover image of Chasing Vermeer" />
                 <section class="thoughts even">
                     <h2><a href="https://en.wikipedia.org/wiki/Chasing_Vermeer" target="_blank" title="Wikipedia">Chasing Vermeer</a></h2>
-                    <p>One of the few books in this list that inspired me to take thoughts while reading it, feeling like I could solve the mystery myself, right alongside the characters. A wonderful description of place, set in the ornate University of Chicago neighboorhood and in the bustling city of Chicago. If you've never seen a Vermeer painting, this book will make you want to find one to observe.</p>
+                    <p>One of the few books in this list that inspired me to take notes while reading it, feeling like I could solve the mystery right alongside the characters. A wonderful description of place, set in the ornate Hyde Park neighborhood of Chicago. If you've never seen a Vermeer painting, this book will make you want to find one to observe.</p>
                     <p>The sequels are excellent and equally as mysterious.</p>
                 </section>
             </article>
@@ -80,10 +82,49 @@
                     <p>This book was a hand-me-down from my Cool Aunt. I loved that this was written in a straight-forward and matter-of-fact tone &ndash; like a real handbook might have been. I have vague memories of assembling a detective/spy kit, and this book was included. The colorful and fun pictures are a strong point, though not very mysterious in-and-of themselves.</p>
                 </section>
             </article>
-        </main>
 
-        <footer>
-            <section class="footer"><p>Created by lucible for LaunchCode 101.</p></section>
-        </footer>
+            <footer>
+                <section class="footer"><p>Created by lucible for LaunchCode 101.</p></section>
+            </footer>
+            <svg height="20px" width="20px" id="h1"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h2"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h3"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h4"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h5"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h6"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h7"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg height="20px" width="20px" id="h8"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+            <svg id="curtain">
+                <defs>
+                    <mask id="cursorMask" maskUnits="objectBoundingBox" maskContentUtils="objectBoundingBox">
+                        <defs>
+                            <filter id="f1" x="0" y="0">
+                              <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+                            </filter>
+                            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                              <stop offset="75%" style="stop-color:rgb(0,0,0); stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0" />
+                            </radialGradient>
+                        </defs>
+                        <g>
+                            <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF" />
+                            <!-- determines the transparent area -->
+                            <circle id="mask" cx="0" cy="0" r="200" fill="url(#grad1)" />
+                        </g>
+                    </mask>
+                </defs>
+                <rect id="cover" width="100%" height="100%" style="fill:rgb(0,0,0);" />
+            </svg>
+            
+            
+            
+            
+            
+            
+            
+            
+
+            <p class="lightSwitch" id="hiddenSwitch">Turn the<br>lights off...</p>
+        </main>
     </body>
 </html>

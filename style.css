@@ -100,7 +100,7 @@ header {
     transition: visibility 0s, opacity 0.5s ease;
 }
 
-#hiddenSwitch {
+#lightSwitch {
     position: fixed;
     right: 1em;
     background: floralwhite;

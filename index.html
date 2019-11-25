@@ -94,19 +94,18 @@
             <svg height="20px" width="20px" id="h6"><circle cx="10" cy="10" r="10" fill="red" /></svg>
             <svg height="20px" width="20px" id="h7"><circle cx="10" cy="10" r="10" fill="red" /></svg>
             <svg height="20px" width="20px" id="h8"><circle cx="10" cy="10" r="10" fill="red" /></svg>
+
             <svg id="curtain">
                 <defs>
                     <mask id="cursorMask" maskUnits="objectBoundingBox" maskContentUtils="objectBoundingBox">
                         <defs>
-                            <filter id="f1" x="0" y="0">
-                              <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
-                            </filter>
                             <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
                               <stop offset="75%" style="stop-color:rgb(0,0,0); stop-opacity:1" />
                               <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0" />
                             </radialGradient>
                         </defs>
                         <g>
+                            <!-- determines the area the mask is applied to -->
                             <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF" />
                             <!-- determines the transparent area -->
                             <circle id="mask" cx="0" cy="0" r="200" fill="url(#grad1)" />
@@ -115,16 +114,8 @@
                 </defs>
                 <rect id="cover" width="100%" height="100%" style="fill:rgb(0,0,0);" />
             </svg>
-            
-            
-            
-            
-            
-            
-            
-            
 
-            <p class="lightSwitch" id="hiddenSwitch">Turn the<br>lights off...</p>
+            <p id="lightSwitch">Turn the<br>lights off...</p>
         </main>
     </body>
 </html>

@@ -3,6 +3,7 @@
     <head>
         <title>A List of Mysterious Books</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Milonga&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/acbbd40189.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <meta charset="utf-8">
@@ -16,7 +17,10 @@
                 </section>
             </header>
             <article id="mixed-up">
-                <img src="images/mixed-up-files.jpg" alt="cover image of The Mixed-Up Files..." />
+                <div class="image">
+                    <img src="images/mixed-up-files.jpg" alt="cover image of The Mixed-Up Files..." />
+                    <img class="minis" id="h4" src="images/icon-westing-game.png" alt="hidden last will" />
+                </div>
                 <section class="thoughts even">
                     <h2><a href="https://en.wikipedia.org/wiki/From_the_Mixed-Up_Files_of_Mrs._Basil_E._Frankweiler" target="_blank" title="Wikipedia">The Mixed-Up Files of Mrs. Basil E Frankweiler</a></h2>
                     <p>This book is about a mysterious sketch, living in a museum after hours, and most importantly a file cabinet full of index cards and article clippings guarded by a grumpy old woman: who knows what intriguing tidbits are hidden inside?</p>
@@ -33,6 +37,7 @@
                     <p>
                         A delicious mix of magical secret societies and the allure of books and knowledge, combined with a modern day interest in technology.
                     </p>
+                    <img class="minis" id="h2" src="images/icon-penumbra.png" alt="hidden secret society icon" />
                 </section>
             </article>
 
@@ -45,7 +50,10 @@
             </article>
 
             <article id="westing">
-                <img src="images/westing-game.jpg" alt="cover image of The Westing Game" class="even" />
+                <div class="image even">
+                    <img src="images/westing-game.jpg" alt="cover image of The Westing Game" />
+                    <img class="minis" id="h5" src="images/icon-vermeer.png" ald="hidden girl with pearl earring" />
+                </div>
                 <section class="thoughts">
                     <h2><a href="https://en.wikipedia.org/wiki/The_Westing_Game" target="_blank" title="Wikipedia">The Westing Game</a></h2>
                     <p>Can you solve the mystery of the will before the author reveals it to you? Not just a tonally mysterious book, but a puzzling one too. A classic of children's literature.</p>
@@ -53,7 +61,10 @@
             </article>
 
             <article id="vermeer">
-                <img src="images/vermeer.jpg" alt="cover image of Chasing Vermeer" />
+                <div class="image">
+                    <img src="images/vermeer.jpg" alt="cover image of Chasing Vermeer" />
+                    <img class="minis" id="h3" src="images/icon-endymion.png" alt="hidden faust poster" />
+                </div>
                 <section class="thoughts even">
                     <h2><a href="https://en.wikipedia.org/wiki/Chasing_Vermeer" target="_blank" title="Wikipedia">Chasing Vermeer</a></h2>
                     <p>One of the few books in this list that inspired me to take notes while reading it, feeling like I could solve the mystery right alongside the characters. A wonderful description of place, set in the ornate Hyde Park neighborhood of Chicago. If you've never seen a Vermeer painting, this book will make you want to find one to observe.</p>
@@ -66,11 +77,15 @@
                 <section class="thoughts">
                     <h2><a href="https://en.wikipedia.org/wiki/Artemis_Fowl" target="_blank" title="Wikipedia">Artemis Fowl</a></h2>
                     <p>Specifically, the first book and its symbol cipher along the bottom of each page in the book. I learned to write it, found a symbol key, and began to decipher it &ndash; to the point where I could almost <a href="https://www.youtube.com/watch?v=3vAnuBtyEYE" target="_blank" title="YouTube - The Matrix">read the symbols</a> as letters. I never did decipher all the ciphered text in the book though.</p>
+                    <img class="minis" id="h7" src="images/icon-top-secret.png" alt="hidden code exchange" />
                 </section>
             </article>
 
             <article id="topsecret">
-                <img src="images/top-secret.jpg" alt="cover image of Top Secret" />
+                <div class="image">
+                    <img src="images/top-secret.jpg" alt="cover image of Top Secret" />
+                    <img class="minis" id="h1" src="images/icon-mixed-up.png" alt="hidden angel sketch" />
+                </div>
                 <section class="thoughts even">
                     <h2><a href="https://books.google.com/books/about/Top_Secret.html?id=_HjRUYwJ1moC" target="_blank" title="Top Secret - Google Books">Top Secret: A Handbook of Codes &amp; Ciphers</a></h2>
                     <p>I was so obsessed with this book that I didn't want to return it to the library. I created my own copy with all the bits I found most interesting by copying them onto lined paper by hand, adding a hand-drawn cover, and stapling it all together to create my own mini-booklet.</p>
@@ -78,7 +93,10 @@
             </article>
 
             <article id="handbook">
-                <img src="images/detectives-handbook.jpg" alt="cover image of The Usborne Detective's Handbook" class="even" />
+                <div class="image even">
+                    <img src="images/detectives-handbook.jpg" alt="cover image of The Usborne Detective's Handbook" />
+                    <img class="minis" id="h6" src="images/icon-artemis-fowl.png" alt="hidden ireland castle" />
+                </div>
                 <section class="thoughts">
                     <h2><a href="https://www.flickr.com/photos/hicksdesign/sets/72157605247570268/" target="_blank" title="Flickr - The Usborne Detective's Handbook">The Usborne Detective's Handbook</a></h2>
                     <p>This book was a hand-me-down from my Cool Aunt. I loved that this was written in a straight-forward and matter-of-fact tone &ndash; like a real handbook might have been. I have vague memories of assembling a detective/spy kit, and this book was included. The colorful and fun pictures are a strong point, though not very mysterious in-and-of themselves.</p>
@@ -87,7 +105,7 @@
 
             <article id="checklist">
                 <section class="thoughts" style="margin-right: 1em; margin-top: 0; margin-bottom: 0; width: 89%;">
-                    <h2>Can you find all the hidden objects on this page?</h2>
+                    <h2>Can you find all the hidden objects on this page? <a href="#easySwitch" id="easySwitch">(Turn on easy mode.)</a></h2>
                     <ul style="column-count: 2;">
                         <li><i class="far fa-square"></i> #1: angel sketch</li>
                         <li><i class="far fa-square"></i> #2: illuminati symbol</li>
@@ -104,14 +122,7 @@
             <footer>
                 <section class="footer"><p>Created by lucible for LaunchCode 101.</p></section>
             </footer>
-
-            <img class="minis" id="h1" src="images/icon-mixed-up.png" alt="hidden angel sketch" />
-            <img class="minis" id="h2" src="images/icon-penumbra.png" alt="hidden secret society icon" />
-            <img class="minis" id="h3" src="images/icon-endymion.png" alt="hidden faust poster" />
-            <img class="minis" id="h4" src="images/icon-westing-game.png" alt="hidden last will" />
-            <img class="minis" id="h5" src="images/icon-vermeer.png" ald="hidden girl with pearl earring" />
-            <img class="minis" id="h6" src="images/icon-artemis-fowl.png" alt="hidden ireland castle" />
-            <img class="minis" id="h7" src="images/icon-top-secret.png" alt="hidden code exchange" />
+            
             <img class="minis" id="h8" src="images/icon-handbook.png" alt="hidden sherlock holmes" />
 
             <svg id="curtain" pointer-events="none">

@@ -9,12 +9,21 @@ html {
 body { 
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); 
     background-repeat: repeat; 
-} 
+    font-family: Source Sans Pro, sans-serif;
+}
+
+h1, h2 {
+    font-family: Milonga, serif;
+}
 
 img {
     width: 12em;
     margin: 1em;
+}
+
+.image {
     place-self: center;
+    position: relative;
 }
 
 main {
@@ -24,14 +33,27 @@ main {
 }
 
 article {
-    margin: 1em;
+    margin: 1.5em;
     display: grid;
     box-shadow: 7px 7px 5px rgba(25, 0, 42, 0.667);
     border-radius: 10px;
     transition: all .5s ease;
+    font-family: Source Sans Pro;
 }
 
-article:hover { transform: scale(1.02); }
+a {
+    text-decoration-style: dashed;
+}
+
+a:link {
+    color: #000;
+}
+
+a:visited {
+    color: rgb(16, 5, 109);
+}
+
+/* article:hover { transform: scale(1.02); } */
 
 .thoughts {
     background-color: floralwhite;
@@ -46,6 +68,7 @@ article:hover { transform: scale(1.02); }
     margin-bottom: 1em;
     margin-left: 1em;
     border-radius: 5px;
+    position: relative;
 }
 
 .thoughts h2 {
@@ -117,6 +140,10 @@ header {
     display: flex;
     justify-content: space-around;
     box-shadow: 5px 5px 3px rgba(25, 0, 42, 0.667);
+}
+
+#wrapper {
+    position: relative;
 }
 
 #wrapper:hover #cover {
@@ -208,41 +235,41 @@ footer {
 
 #h1 {
     position: absolute;
-    left: 10em;
-    top: 81em;
+    left: 30px;
+    top: 80px;
 }
 #h2 {
     position: absolute;
-    left: 54em;
-    top: 35em;
+    left: -12px;
+    top: -11px;
 }
 #h3 {
     position: absolute;
-    left: 18em;
-    top: 62em;
+    left: 151px;
+    top: 101px;
 }
 #h4 {
     position: absolute;
-    left: 11em;
-    top: 8em;
+    left: 47px;
+    top: 21px;
 }
 #h5 {
     position: absolute;
-    right: 17em;
-    top: 55em;
+    left: 60px;
+    top: 100px;
 }
 #h6 {
     position: absolute;
-    right: 8em;
-    top: 110em;
+    left: 47px;
+    top: 163px;
 }
 #h7 {
     position: absolute;
-    left: 66em;
-    top: 67em;
+    left: -10px;
+    top: -10px;
 }
 #h8 {
     position: absolute;
-    left: 1em;
-    top: 114em;
+    left: 0;
+    bottom: 3em;
 }

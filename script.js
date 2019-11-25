@@ -24,7 +24,7 @@ function init () {
     lightSwitch.addEventListener('click', () => {
         if (toggle === false) {
             toggle = true
-            lightSwitch.innerHTML = 'Lights ON'
+            lightSwitch.innerHTML = '<i class="fas fa-toggle-on"></i> <i class="far fa-lightbulb"></i>'
 
             checklist.style.display = "grid"
 
@@ -38,7 +38,7 @@ function init () {
             minis.map((item) => item.style.opacity = "100")
         } else {
             toggle = false
-            lightSwitch.innerHTML = 'Lights OFF'
+            lightSwitch.innerHTML = '<i class="fas fa-toggle-off"></i> <i class="far fa-lightbulb"></i>'
 
             checklist.style.display = "none"
 

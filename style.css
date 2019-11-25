@@ -2,6 +2,10 @@
 
 /* TO DO: Address the spacing & margin issues when in column mode. */
 
+html {
+    line-height: unset;
+}
+
 body { 
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); 
     background-repeat: repeat; 
@@ -89,6 +93,10 @@ header {
 }
 
 .minis {
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    border: 3px solid #000a;
     visibility: hidden;
     opacity: 0;
 }
@@ -99,8 +107,10 @@ header {
     background: floralwhite;
     padding: .5em;
     border-radius: 10px;
-    width: 80px;
+    width: 45px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 #wrapper:hover #cover {
@@ -192,41 +202,41 @@ footer {
 
 #h1 {
     position: absolute;
-    left: 8em;
-    top: 26em;
+    left: 10em;
+    top: 81em;
 }
 #h2 {
     position: absolute;
-    left: 70em;
+    left: 54em;
     top: 35em;
 }
 #h3 {
     position: absolute;
-    left: 19em;
-    top: 67em;
+    left: 18em;
+    top: 62em;
 }
 #h4 {
     position: absolute;
-    left: 27em;
-    top: 1em;
+    left: 11em;
+    top: 8em;
 }
 #h5 {
     position: absolute;
-    right: 2em;
-    top: 50em;
+    right: 17em;
+    top: 55em;
 }
 #h6 {
     position: absolute;
-    left: 45em;
-    top: 97em;
+    right: 8em;
+    top: 110em;
 }
 #h7 {
     position: absolute;
     left: 66em;
-    top: 66em;
+    top: 67em;
 }
 #h8 {
     position: absolute;
-    left: 2em;
-    top: 105em;
+    left: 1em;
+    top: 113em;
 }

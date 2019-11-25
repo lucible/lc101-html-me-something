@@ -13,18 +13,6 @@ img {
     place-self: center;
 }
 
-footer {
-    grid-row-start: 11;
-    grid-column: 1 / span 5;
-    text-align: center;
-    background: floralwhite;
-    margin-top: 1em;
-}
-
-.footer {
-    grid-column: 2;
-}
-
 main {
     display: grid;
     place-content: center;
@@ -165,6 +153,29 @@ header {
     background-color: cadetblue;
     grid-column: 4;
     grid-row: 9 / span 2;
+}
+
+#checklist {
+    background-color: darkseagreen;
+    grid-column: 2;
+    grid-row: 10 / span 2;
+    display: none;
+}
+
+#checklist ul {
+    list-style: none;
+}
+
+footer {
+    grid-row-start: 12;
+    grid-column: 1 / span 5;
+    text-align: center;
+    background: floralwhite;
+    margin-top: 1em;
+}
+
+.footer {
+    grid-column: 2;
 }
 
 @media (max-width: 900px) {

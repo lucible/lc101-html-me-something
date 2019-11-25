@@ -28,12 +28,14 @@ function init () {
 
             checklist.style.display = "grid"
 
+            document.getElementsByTagName('footer')[0].style.marginTop = "1em"
+
             // black curtain fade in-out styling
             curtain.style.visibility = "visible"
             curtain.style.opacity = "100"
 
             // hidden pictures fade in-out styling
-            minis.map((item) => item.style.transition = "visibility 0s, opacity 2.5s ease")
+            minis.map((item) => item.style.transition = "visibility 0s, opacity 2.5s ease, height 0.5s ease")
             minis.map((item) => item.style.visibility = "visible")
             minis.map((item) => item.style.opacity = "100")
         } else {
@@ -42,13 +44,15 @@ function init () {
 
             checklist.style.display = "none"
 
+            document.getElementsByTagName('footer')[0].style.marginTop = "4em"
+
             // black curtain fade in-out styling
             curtain.style.transition = "visibility 0.5s, opacity 0.5s ease"
             curtain.style.visibility = "hidden"
             curtain.style.opacity = "0"
 
             // hidden pictures fade in-out styling
-            minis.map((item) => item.style.transition = "visibility 0s, opacity 0s ease")
+            minis.map((item) => item.style.transition = "visibility 0s, opacity 0s ease, height 0.5s ease")
             minis.map((item) => item.style.visibility = "hidden")
             minis.map((item) => item.style.opacity = "0")
         }

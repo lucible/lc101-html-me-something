@@ -26,7 +26,7 @@ main {
 article {
     margin: 1em;
     display: grid;
-    box-shadow: 7px 7px 0 #333d;
+    box-shadow: 7px 7px 5px rgba(25, 0, 42, 0.667);
     border-radius: 10px;
     transition: all .5s ease;
 }
@@ -77,7 +77,7 @@ header {
     grid-column: 4;
     background: floralwhite;
     border-radius: 10px;
-    box-shadow: 7px 7px 0 #333d;
+    box-shadow: 7px 7px 5px rgba(25, 0, 42, 0.667);
     padding: 1em;
 }
 
@@ -93,12 +93,17 @@ header {
 }
 
 .minis {
-    height: 30px;
+    height: 15px;
     width: auto;
     border-radius: 10px;
-    border: 3px solid #000a;
+    /* border: 3px solid #000a; */
     visibility: hidden;
     opacity: 0;
+}
+
+.minis:hover {
+    height: 60px;
+    width: auto;
 }
 
 #lightSwitch {
@@ -111,6 +116,7 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-around;
+    box-shadow: 5px 5px 3px rgba(25, 0, 42, 0.667);
 }
 
 #wrapper:hover #cover {
@@ -181,7 +187,7 @@ footer {
     grid-column: 1 / span 5;
     text-align: center;
     background: floralwhite;
-    margin-top: 1em;
+    margin-top: 4em;
 }
 
 .footer {
@@ -238,5 +244,5 @@ footer {
 #h8 {
     position: absolute;
     left: 1em;
-    top: 113em;
+    top: 114em;
 }

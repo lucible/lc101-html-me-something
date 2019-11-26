@@ -16,6 +16,19 @@ function init () {
         })
     })
 
+    let easyMode = document.getElementById('easySwitch')
+    let easy = false
+
+    easyMode.addEventListener('click', () => {
+        if (easy === false) {
+            easy = true
+            minis.map((item) => item.style.border = "3px solid #F00a")
+        } else {
+            easy = false
+            minis.map((item) => item.style.border = "")
+        }
+    })
+
     let curtain = document.getElementById('curtain')
     let lightSwitch = document.getElementById('lightSwitch')
     let checklist = document.getElementById('checklist')

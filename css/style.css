@@ -1,0 +1,79 @@
+/* BACKGROUND IMAGE & FONTS */
+
+body { 
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); 
+    background-repeat: repeat; 
+    font-family: Source Sans Pro, sans-serif;
+}
+
+h1, h2 {
+    font-family: Milonga, serif;
+}
+
+/* LINK STYLES */
+
+a {
+    text-decoration-style: dashed;
+}
+
+a:link {
+    color: #000;
+}
+
+a:visited {
+    color: rgb(16, 5, 109);
+}
+
+/* LIST STYLES */
+
+#checklist ul {
+    list-style: none;
+}
+
+/* BACKGROUND COLORS */
+
+#mixed-up, #westing, #topsecret {
+    background-color: lightblue;
+}
+
+#penumbra, #vermeer, #handbook {
+    background-color: cadetblue;
+}
+
+#endymion, #fowl, #checklist {
+    background-color: darkseagreen;
+}
+
+header, #lightSwitch, .thoughts, footer {
+    background-color: floralwhite;
+}
+
+/* TEXT ALIGN */
+
+header, footer {
+    text-align: center;
+}
+
+.even.thoughts {
+    text-align: right;
+}
+
+/* DROP SHADOW */
+
+header {
+    box-shadow: 7px 7px 5px rgba(25, 0, 42, 0.667);
+}
+
+#lightSwitch {
+    box-shadow: 5px 5px 3px rgba(25, 0, 42, 0.667);
+}
+
+article {
+    box-shadow: 7px 7px 5px rgba(25, 0, 42, 0.667);
+}
+
+/* APPLY MASK TO CURTAIN */
+
+#wrapper:hover #cover {
+    mask: url("#cursorMask");
+}

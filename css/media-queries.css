@@ -1,0 +1,17 @@
+/* @media (max-width: 900px) {
+    .thoughts {
+        grid-row: 2;
+    }
+    img {
+        place-self: center;
+    }
+    .even {
+        grid-column: unset;
+    }
+    .thoughts, .even.thoughts, .list.thoughts {
+        margin: 1em;
+    }
+    .list {
+        width: auto;
+    }
+} */

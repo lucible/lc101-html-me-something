@@ -1,0 +1,67 @@
+/* WRAPPER POSITIONING */
+
+.image {
+    place-self: center;
+}
+
+#wrapper, .thoughts, .image {
+    position: relative;
+}
+
+/* HIDDEN IMAGE POSITIONING */
+
+#h1 {
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+#h2 {
+    position: absolute;
+    left: -12px;
+    top: -11px;
+}
+#h3 {
+    position: absolute;
+    left: 151px;
+    top: 101px;
+}
+#h4 {
+    position: absolute;
+    left: 47px;
+    top: 21px;
+}
+#h5 {
+    position: absolute;
+    left: 60px;
+    top: 100px;
+}
+#h6 {
+    position: absolute;
+    left: 47px;
+    top: 163px;
+}
+#h7 {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+#h8 {
+    position: absolute;
+    left: 0;
+    bottom: 3em;
+}
+
+/* HIDDEN IMAGE STYLING */
+
+.minis {
+    height: 15px;
+    width: auto;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.minis:hover {
+    height: 60px;
+    width: auto;
+}

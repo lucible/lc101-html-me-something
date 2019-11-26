@@ -1,0 +1,155 @@
+/* BASE ELEMENT SETTINGS */
+
+img {
+    width: 12em;
+    margin: 1em;
+}
+
+/* OUTER GRID SETTINGS */
+
+main {
+    display: grid;
+    place-content: center;
+    grid-template-columns: .2fr 1fr 0 1fr .2fr;
+}
+
+/* BLOCK GRID COLUMN & ROW SETTINGS */
+
+header {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    place-self: center;
+
+    /* shape & spacing */
+    margin: -1em 2em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#mixed-up {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+
+#penumbra {
+    grid-column: 4;
+    grid-row: 3 / span 2;
+}
+
+#endymion {
+    grid-column: 2;
+    grid-row: 4 / span 2;
+}
+
+#westing {
+    grid-column: 4;
+    grid-row: 5 / span 2;
+}
+
+#vermeer {
+    grid-column: 2;
+    grid-row: 6 / span 2;
+}
+
+#fowl {
+    grid-column: 4;
+    grid-row: 7 / span 2;
+}
+
+#topsecret {
+    grid-column: 2;
+    grid-row: 8 / span 2;
+}
+
+#handbook {
+    grid-column: 4;
+    grid-row: 9 / span 2;
+}
+
+#checklist {
+    grid-column: 2;
+    grid-row: 10 / span 2;
+    display: none;
+}
+
+footer {
+    grid-row-start: 12;
+    grid-column: 1 / span 5;
+
+    /* shape & spacing */
+    margin-top: 4em;
+}
+
+#curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+#lightSwitch {
+    position: fixed;
+    right: 1em;
+    width: 45px;
+
+    /* parent flex */
+    display: flex;
+    justify-content: space-around;
+
+    /* shape & spacing */
+    padding: .5em;
+    border-radius: 10px;
+}
+
+/* SUB ARTICLE LAYOUT */
+
+article {
+    margin: 1.5em;
+    border-radius: 10px;
+
+    /* parent grid */
+    display: grid;
+}
+
+.even {
+    grid-column: 2;
+    place-self: center;
+}
+
+.even.thoughts {
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+}
+
+.thoughts {
+    /* parent flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* child grid */
+    place-self: center;
+    grid-row: 1;
+
+    /* shape & spacing */
+    margin-top: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.thoughts h2 {
+    margin-bottom: 0;
+}
+
+.list {
+    margin: 1em;
+}

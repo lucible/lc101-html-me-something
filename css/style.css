@@ -30,6 +30,16 @@ a:visited {
     list-style: none;
 }
 
+/* FOUND & EASY BORDER STYLES */
+
+.found {
+    border: 3px solid #088a;
+}
+
+.easy {
+    border: 3px solid #F00a;
+}
+
 /* BACKGROUND COLORS */
 
 #mixed-up, #westing, #topsecret {

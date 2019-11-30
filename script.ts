@@ -126,21 +126,35 @@ function setupLightSwitch(minis : HTMLElement[]) {
     }
 }
 
-// TO DO: make the easy switch //NOT// overwrite border on already found pictures
 function setupEasySwitch(allMinis : HTMLElement[]) {
     const easyMode = document.getElementById('easySwitch')
-    const minis = allMinis
     let state = false
 
     if (easyMode) {
         easyMode.addEventListener('click', () => {
             if (state === false) {
+                // update state variable
                 state = true
-                // let minis = allMinis.filter((item) => getFoundItems().includes(item))
+
+                // change inner button text
+                easyMode.innerHTML = "(Turn off easy mode.)"
+
+                // get all pictures not found
+                let minis = allMinis.filter((item) => !item.classList.contains('found'))
+
+                // update class on not found pictures
                 minis.forEach((item) => item.className = "minis easy")
             } else {
+                // update state variable
                 state = false
-                // let minis = allMinis.filter((item) => getFoundItems().includes(item))
+
+                // change inner button text
+                easyMode.innerHTML = "(Turn on easy mode.)"
+
+                // get all pictures not yet found
+                let minis = allMinis.filter((item) => !item.classList.contains('found'))
+
+                // reset class on not found pictures
                 minis.forEach((item) => item.className = "minis")
             }
         })

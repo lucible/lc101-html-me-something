@@ -15,8 +15,15 @@ main {
 
 /* BLOCK GRID COLUMN & ROW SETTINGS */
 
-header {
+header, #penumbra, #westing, #fowl, #handbook {
     grid-column: 4;
+}
+
+#mixed-up, #endymion, #vermeer, #topsecret, #checklist {
+    grid-column: 2;
+}
+
+header {
     grid-row: 1 / span 2;
     place-self: center;
 
@@ -27,47 +34,38 @@ header {
 }
 
 #mixed-up {
-    grid-column: 2;
     grid-row: 2 / span 2;
 }
 
 #penumbra {
-    grid-column: 4;
     grid-row: 3 / span 2;
 }
 
 #endymion {
-    grid-column: 2;
     grid-row: 4 / span 2;
 }
 
 #westing {
-    grid-column: 4;
     grid-row: 5 / span 2;
 }
 
 #vermeer {
-    grid-column: 2;
     grid-row: 6 / span 2;
 }
 
 #fowl {
-    grid-column: 4;
     grid-row: 7 / span 2;
 }
 
 #topsecret {
-    grid-column: 2;
     grid-row: 8 / span 2;
 }
 
 #handbook {
-    grid-column: 4;
     grid-row: 9 / span 2;
 }
 
 #checklist {
-    grid-column: 2;
     grid-row: 10 / span 2;
     display: none;
 }
@@ -103,6 +101,16 @@ footer {
     /* shape & spacing */
     padding: .5em;
     border-radius: 10px;
+}
+
+#tooltip {
+    position: fixed;
+    opacity: 0;
+
+    /* shape & spacing */
+    padding: 3px;
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
 }
 
 /* SUB ARTICLE LAYOUT */
@@ -152,4 +160,8 @@ article {
 
 .list {
     margin: 1em;
+}
+
+.checklist-list {
+    column-count: 2;
 }

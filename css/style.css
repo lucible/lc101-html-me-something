@@ -48,6 +48,10 @@ header, #lightSwitch, .thoughts, footer {
     background-color: floralwhite;
 }
 
+#tooltip {
+    background-color: darksalmon;
+}
+
 /* TEXT ALIGN */
 
 header, footer {

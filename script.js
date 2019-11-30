@@ -1,20 +1,10 @@
+"use strict";
+
 function init () {
+    let wrapper = document.getElementById('wrapper')
     let minis = Array.from(document.getElementsByClassName('minis'))
     let bullets = Array.from(document.getElementsByClassName('far'))
     let checked = []
-
-    minis.map((item, index) => {
-        item.addEventListener('click', () => {
-            console.log(item.id)
-            console.log(index)
-            console.log(bullets[index])
-            bullets[index].className = "far fa-check-square"
-            checked = Array.from(document.getElementsByClassName('fa-check-square'))
-            if (checked.length === 8) {
-                document.getElementById('checklist').childNodes[1].childNodes[1].innerHTML = "Congratulations! You found them all!"
-            }
-        })
-    })
 
     let easyMode = document.getElementById('easySwitch')
     let easy = false
@@ -27,6 +17,20 @@ function init () {
             easy = false
             minis.map((item) => item.style.border = "")
         }
+    })
+
+    minis.map((item, index) => {
+        item.addEventListener('click', () => {
+            item.style.border = "3px solid #088a"
+            bullets[index].className = "far fa-check-square"
+            checked = Array.from(document.getElementsByClassName('fa-check-square'))
+            if (checked.length === 8) {
+                document.getElementById('checklist').childNodes[1].childNodes[1].innerHTML = "Congratulations! You found them all!"
+                wrapper.className = "busy"
+                tooltip.style.opacity = 1
+                setTimeout(() => tooltip.style.opacity = 0, 3000)
+            }
+        })
     })
 
     let curtain = document.getElementById('curtain')
@@ -72,10 +76,13 @@ function init () {
     })
 
     let circle = document.getElementById('mask')
+    let tooltip = document.getElementById('tooltip')
 
     wrapper.addEventListener('mousemove', (e) => {
         circle.setAttribute('cx', e.clientX)
         circle.setAttribute('cy', e.clientY)
+        tooltip.style.left = (e.clientX - (tooltip.clientWidth / 2)) + 'px'
+        tooltip.style.top = (e.clientY - tooltip.clientHeight - 20) + 'px'
     })
 
 }
